@@ -1,3 +1,16 @@
+Implementation of 3 different compile time paging algorithms :
+   1. Second chance FIFO (First in first out)
+   2. Least accessed + aging
+   3. Not frequently used + aging
+
+default paging algorithm is second chance fifo, to switch from default use SWAP_ALGO macro
+   1. SWAP_ALGO=SCFIFO
+   2. SWAP_ALGO=LAPA
+   3. SWAP_ALGO=NFUA
+
+to disable paging :
+   SWAP_ALGO=NONE
+
 A fork of xv6 with support for devcontainer.
 
 # Installation
